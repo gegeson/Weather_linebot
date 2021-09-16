@@ -60,7 +60,8 @@ def handle_message(event):
             event.reply_token, TextSendMessage(text=get_tom_weather(text_in))
         )
     else:
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text_in))
+        text = "「札幌、東京、横浜、名古屋、大阪、福岡」and「今日、明日」かを送信してください" + "\n例) 福岡の今日の天気教えて！"
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text))
 
 
 if __name__ == "__main__":
