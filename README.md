@@ -8,4 +8,4 @@
 - flask=1.1.2
 - line-bot-sdk=1.18.0
 
-![例](images/images/1631778750858.png)
+![例](images/1631778750858.png)
